@@ -11,7 +11,7 @@ def gaussSeidel(matrizInicial, vetorB, vetorAproxInicial, numIteracoes, erro):
         j+=1
         norma = np.linalg.norm(vResultado)
         if i != 0:
-	        if fabs(norma - tmp)/fabs(norma) < erro:
+	        if mt.fabs(norma - tmp)/mt.fabs(norma) < erro:
 	        	print "Iteracoes: ", j
 	    		return vResultado
         tmp = norma
