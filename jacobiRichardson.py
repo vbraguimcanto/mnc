@@ -21,9 +21,9 @@ def jacobiRichardson(matrizInicial, vetorB, vetorAproxInicial, numIteracoes, err
 def main():
 	numIteracoes = int(input("Digite o numero maximo de iteracoes: "))
 	erro = float(input("Digite o erro: "))
-	matrizInicial = np.array([[4.0, -2.0, 1.0], [1.0, -3.0, 2.0], [-1.0, 2.0, 6.0]])
-	vetorB = [1.0, 2.0, 3.0]
-	vetorAproxInicial = [1.0, 1.0, 1.0]
+	matrizInicial = np.array([[10.0, 2.0, 1.0], [1.0, 5.0, 1.0], [2.0, 3.0, 10.0]])
+	vetorB = [7.0, -8.0, 6.0]
+	vetorAproxInicial = [0.7, -1.6, 0.6]
 	vetorAproxInicial = jacobiRichardson(matrizInicial, vetorB, vetorAproxInicial, numIteracoes, erro)
 	print np.linalg.solve(matrizInicial, vetorB)
 main()
