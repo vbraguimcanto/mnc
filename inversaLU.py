@@ -23,3 +23,4 @@ def main():
 	else:
 		gaussCompacto(m)
 main()
+
